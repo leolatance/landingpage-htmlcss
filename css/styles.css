@@ -1,0 +1,310 @@
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+}
+
+/* first container */
+
+.main-banner {
+    background-image: url("../img/fxbg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0;
+    filter: blur(0px);
+    text-align: center;
+    
+}
+
+.main-banner h1 {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: #000 5px 2px 3px;
+    border: 5px solid white;
+    border-radius: 5px;
+    display: inline;
+    padding: 20px;
+}
+
+.main-banner h1 {
+    font-size: 74px;
+}
+
+.invest-btn {
+    padding: 20px 25px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    tansition: 0.5s;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.main-banner li {
+    list-style-type: none;
+    font-size: 34px;
+    font-weight: bold;
+    position: relative;
+}
+
+.invest-btn:hover{
+    background-color: #35d977;
+    color: #fff;
+}
+
+/* benefits */
+.benefits-container {
+    padding: 5rem 0;
+    margin-top: -25px;
+}
+
+.benefits-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.benefits-container li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fa-solid {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-money-bill {
+    color: green;
+}
+
+.fa-money-bill-trend-up {
+    color: #ea0000;
+}
+
+.fa-people-group {
+    color: #2e3092
+}
+
+.benefits-container p {
+    line-height: 34px;
+    font-size: 26px;
+}
+
+/* plans container */
+
+.value-container {
+    padding-bottom: 2rem;
+    text-align: center;
+    background-image: url('../img/bg2.png');
+    background-size: cover;
+    position: relative;
+    
+}
+
+.value-container h2 {
+    font-size: 42px;
+    font-weight: bold;
+    font-color: white;
+    padding: 3rem;
+    text-shadow: #000 5px 2px 3px;
+        
+}
+
+.value-container p {
+    font-size: 20px;
+    margin-top: -30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: #000 5px 2px 3px;
+}
+
+
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto 0;
+    position: relative;
+}
+
+.plan {
+    flex: 100;
+    max-width: 375px;
+    margin: 0 20px;
+}
+
+.plan ul {
+    padding: 0;
+}
+
+.plan li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color: #333;
+}
+.plan .value {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2cc762;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.plan .plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #202b34;
+    padding: 50px 0;
+}
+
+.plan .plan-btn {
+    background-color: #2cc762;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.plan .recommended {
+    background-color: #f45c57;
+}
+
+
+/* contact form */
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    margin-top: -55px;
+}
+
+.contact-container p {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+}
+/* responsividade */
+
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+    .plans-container {
+        width: 95;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+/* tablet 900px */
+@media (max-width: 900px) {
+    .main-banner p {
+        padding: 0 6rem;
+    }
+
+    .searchdomain-container {
+        padding: 2rem 4rem;
+    }
+}
+
+/* celular 576px */
+@media (max-width: 576px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .services-container ul {
+        flex-direction: column;
+    }
+
+    .main-banner p {
+        padding: 0 2rem;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contact-container {
+        padding: 3rem 2rem;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .searchdomain-container h2 {
+        font-size: 28px;
+    }
+
+    .searchdomain-container input[type="text"] {
+        width: 100%;
+    }
